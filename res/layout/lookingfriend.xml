@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/lookingfriend_nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:ems="10"
+            android:hint="输入好友的账号" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/lookingfriend_findBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.60"
+            android:text="查找" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/lookingfriend_result_gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="255dp"
+            android:numColumns="3" >
+        </GridView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/lookingfriend_add_friendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+好友" />
+    </LinearLayout>
+
+</LinearLayout>

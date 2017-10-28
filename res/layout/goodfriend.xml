@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/list"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="好友列表"
+        
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/good_friend_friendlist"
+        android:layout_width="wrap_content"
+        android:layout_height="216dp"
+        android:layout_weight="0.88"
+        android:textColor="@color/black1"
+        
+        android:drawSelectorOnTop="true" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/good_friend_inviteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邀  请" />
+
+        <Button
+            android:id="@+id/good_friend_deleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删  除" />
+
+        <Button
+            android:id="@+id/good_friend_findBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查  找" />
+
+        <Button
+            android:id="@+id/good_friend_backoutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返   回" />
+
+    </LinearLayout>
+
+</LinearLayout>
